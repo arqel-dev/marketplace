@@ -91,7 +91,8 @@ final class Plugin extends Model
     /**
      * Restringe a query a plugins publicly visíveis.
      *
-     * @param  Builder<Plugin>  $query
+     * @param Builder<Plugin> $query
+     *
      * @return Builder<Plugin>
      */
     public function scopePublished(Builder $query): Builder
@@ -102,7 +103,8 @@ final class Plugin extends Model
     /**
      * Filtra por tipo (`field`, `widget`, `integration`, `theme`).
      *
-     * @param  Builder<Plugin>  $query
+     * @param Builder<Plugin> $query
+     *
      * @return Builder<Plugin>
      */
     public function scopeOfType(Builder $query, string $type): Builder
@@ -113,7 +115,8 @@ final class Plugin extends Model
     /**
      * Busca textual em `name` e `description` (LIKE wildcards).
      *
-     * @param  Builder<Plugin>  $query
+     * @param Builder<Plugin> $query
+     *
      * @return Builder<Plugin>
      */
     public function scopeSearch(Builder $query, string $term): Builder

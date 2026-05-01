@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Arqel\Marketplace\Http\Controllers;
 
 use Arqel\Marketplace\Models\Plugin;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;

@@ -59,7 +59,8 @@ final class PluginReview extends Model
     /**
      * Reviews positivas (≥ 4 estrelas).
      *
-     * @param  Builder<PluginReview>  $query
+     * @param Builder<PluginReview> $query
+     *
      * @return Builder<PluginReview>
      */
     public function scopePositive(Builder $query): Builder
